@@ -17,7 +17,12 @@
 
 上面已经介绍了SpringAnimation的父类，那么这个SpringAnimation又是个什么鬼呢？春天动画？并不是，而是弹性动画。官方文档是这样说的：
  
-		SpringAnimation is an animation that is driven by a SpringForce. The spring force defines the spring's stiffness, damping ratio, as well as the rest position. Once the SpringAnimation is started, on each frame the spring force will update the animation's value and velocity. The animation will continue to run until the spring force reaches equilibrium. If the spring used in the animation is undamped, the animation will never reach equilibrium. Instead, it will oscillate forever.
+		SpringAnimation is an animation that is driven by a SpringForce. 
+		The spring force defines the spring's stiffness, damping ratio, as well as the rest position. 
+		Once the SpringAnimation is started, on each frame the spring force will update the animation's value and velocity.
+		The animation will continue to run until the spring force reaches equilibrium. 
+		If the spring used in the animation is undamped, the animation will never reach equilibrium. 
+		Instead, it will oscillate forever.
 		
 		SpringAnimation是一种由SpringForce驱动的动画。 弹力定义了弹簧的刚度,阻尼比,以及静止位置。一旦SpringAnimation开始,每一帧中，弹力将更新动画的值和速度。直到弹力达到平衡前，动画将持续运行。如果动画没有阻尼,动画将永远不会达到平衡。相反,它会一直弹。
 				
