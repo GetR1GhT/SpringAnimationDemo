@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.getright.skin.springanimationdemo.MainActivity">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/animation_text_view"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:background="@color/colorAccent"
+        android:padding="10dp"
+        android:text="动画效果展示"
+        android:textColor="#ffffff"
+        android:translationZ="10dp"
+        android:elevation="10dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/tanslation_x"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:padding="10dp"
+            android:text="TranslationX"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/tanslation_y"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@color/colorPrimary"
+            android:padding="10dp"
+            android:text="TranslationY"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/tanslation_z"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="8dp"
+            android:background="@color/colorPrimary"
+            android:padding="10dp"
+            android:text="TranslationZ"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/scale_x"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tanslation_x"
+            android:layout_marginTop="2dp"
+            android:background="@color/colorPrimary"
+            android:padding="10dp"
+            android:text="ScaleX"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/scale_y"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tanslation_y"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="2dp"
+            android:background="@color/colorPrimary"
+            android:padding="10dp"
+            android:text="ScaleY"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/rotation"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/tanslation_z"
+            android:layout_marginTop="2dp"
+            android:background="@color/colorPrimary"
+            android:padding="10dp"
+            android:text="Rotation"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/rotation_x"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/scale_x"
+            android:layout_marginTop="2dp"
+            android:background="@color/colorPrimary"
+            android:padding="10dp"
+            android:text="RoatationX"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/rotation_y"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/scale_y"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="2dp"
+            android:background="@color/colorPrimary"
+            android:padding="10dp"
+            android:text="RotationY"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/x"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/rotation"
+            android:layout_marginTop="2dp"
+            android:background="@color/colorPrimary"
+            android:padding="10dp"
+            android:text="X"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/y"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rotation_x"
+            android:layout_marginTop="2dp"
+            android:background="@color/colorPrimary"
+            android:padding="10dp"
+            android:text="Y"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/z"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rotation_y"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="2dp"
+            android:background="@color/colorPrimary"
+            android:padding="10dp"
+            android:text="Z"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/alpha"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/z"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="2dp"
+            android:background="@color/colorPrimary"
+            android:padding="10dp"
+            android:text="Alpha"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/scroll_x"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/x"
+            android:layout_marginTop="2dp"
+            android:background="@color/colorPrimary"
+            android:padding="10dp"
+            android:text="ScrollX"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/scroll_y"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/y"
+            android:layout_marginTop="2dp"
+            android:background="@color/colorPrimary"
+            android:padding="10dp"
+            android:text="ScrollY"
+            android:textColor="#FFFFFF" />
+    </RelativeLayout>
+
+</RelativeLayout>
