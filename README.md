@@ -2,26 +2,30 @@
 
  &nbsp;&nbsp;&nbsp;&nbsp;在最近更新的25.3.0的支持库中，新更新了一个叫做DynamicAnimation（动力学动画？？）的类，其中他有一个子类叫做SpringAnimation，官方文档是这样说的：
 	  
-	This class is the base class of physics-based animations. It manages the animation's lifecycle such as start() and cancel(). This base class also handles the common setup for all the subclass animations. For example, DynamicAnimation supports adding DynamicAnimation.OnAnimationEndListener and DynamicAnimation.OnAnimationUpdateListener so that the important animation events can be observed through the callbacks. The start conditions for any subclass of DynamicAnimation can be set using setStartValue(float) and setStartVelocity(float).
+	This class is the base class of physics-based animations.
+	It manages the animation's lifecycle such as start() and cancel().
+	This base class also handles the common setup for all the subclass animations.
+	For example, DynamicAnimation supports adding DynamicAnimation.OnAnimationEndListener and   DynamicAnimation.OnAnimationUpdateListener so that the important animation events can be observed through the callbacks. 
+	The start conditions for any subclass of DynamicAnimation can be set using setStartValue(float) and setStartVelocity(float).
 	
 粗略的翻译一下：
-		 &nbsp;&nbsp;&nbsp;&nbsp; 这个类是基于物理学动画的鸡肋，能够管理动画的生命周期，例如start()和cancel()，同时还能处理所有子类动画的常用设置。
-		 &nbsp;&nbsp;&nbsp;&nbsp;举个简单的栗子，DynamicAnimation支持添加DynamicAnimation.OnAnimationEndListener 和DynamicAnimation.OnAnimationUpdateListener这种可以观察到重要的动画事件的回调，任何子类DynamicAnimation可以使用setStartValue(float)和setStartVelocity(float)设置初始条件。
-		 &nbsp;&nbsp;&nbsp;&nbsp; 那么也就是说我们可以通过这个新更新出来的动画库来实现一些更加符合物理学的动画。
+		 这个类是基于物理学动画的鸡肋，能够管理动画的生命周期，例如start()和cancel()，同时还能处理所有子类动画的常用设置。
+		 举个简单的栗子，DynamicAnimation支持添加DynamicAnimation.OnAnimationEndListener 和DynamicAnimation.OnAnimationUpdateListener这种可以观察到重要的动画事件的回调，任何子类DynamicAnimation可以使用setStartValue(float)和setStartVelocity(float)设置初始条件。
+		  那么也就是说我们可以通过这个新更新出来的动画库来实现一些更加符合物理学的动画。
 
 ##SpringAnimation简介
 
- &nbsp;&nbsp;&nbsp;&nbsp; 上面已经介绍了SpringAnimation的父类，那么这个SpringAnimation又是个什么鬼呢？春天动画？并不是，而是弹性动画。官方文档是这样说的：
+上面已经介绍了SpringAnimation的父类，那么这个SpringAnimation又是个什么鬼呢？春天动画？并不是，而是弹性动画。官方文档是这样说的：
  
 		SpringAnimation is an animation that is driven by a SpringForce. The spring force defines the spring's stiffness, damping ratio, as well as the rest position. Once the SpringAnimation is started, on each frame the spring force will update the animation's value and velocity. The animation will continue to run until the spring force reaches equilibrium. If the spring used in the animation is undamped, the animation will never reach equilibrium. Instead, it will oscillate forever.
 		
 		SpringAnimation是一种由SpringForce驱动的动画。 弹力定义了弹簧的刚度,阻尼比,以及静止位置。一旦SpringAnimation开始,每一帧中，弹力将更新动画的值和速度。直到弹力达到平衡前，动画将持续运行。如果动画没有阻尼,动画将永远不会达到平衡。相反,它会一直弹。
-&nbsp;&nbsp;&nbsp;&nbsp;		介绍完毕，那我们就来创建一个最简单的SpringAnimation。
+				
+介绍完毕，那我们就来创建一个最简单的SpringAnimation。
 
 ##使用SpringAnimation
 	
 1.引包
-	
 	
 
 ```
